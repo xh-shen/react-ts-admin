@@ -1,0 +1,28 @@
+@import '../../styles/var.less';
+
+.@{prefix-cls} {
+  &-multi-column {
+    min-height: 100%;
+    &-top {
+      margin-bottom: 16px;
+      padding: 15px 24px;
+      background-color: #fff;
+    }
+    &-content {
+      display: flex;
+    }
+    &-left {
+      margin-right: 16px;
+      min-height: 60vh;
+      // padding: 24px 24px;
+      background-color: #fff;
+    }
+    &-right {
+      flex: 1;
+      // min-height: 60vh;
+      // padding: 24px 24px;
+      background-color: #fff;
+      overflow: hidden;
+    }
+  }
+}

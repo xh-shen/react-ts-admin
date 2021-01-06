@@ -1,0 +1,76 @@
+@import '../../styles/var.less';
+
+.@{prefix-cls} {
+  &-setting-drawer {
+    &-handle {
+      position: absolute;
+      top: 240px;
+      right: 300px;
+      z-index: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 48px;
+      height: 48px;
+      font-size: 16px;
+      text-align: center;
+      color: #fff;
+      // background: @primary-color;
+      border-radius: 4px 0 0 4px;
+      cursor: pointer;
+      pointer-events: auto;
+    }
+    &-content {
+      position: relative;
+      min-height: 100%;
+      .theme-color {
+        margin-top: 24px;
+        overflow: hidden;
+        .theme-color-block {
+          float: left;
+          width: 20px;
+          height: 20px;
+          margin-right: 8px;
+          color: #fff;
+          font-weight: bold;
+          text-align: center;
+          border-radius: 2px;
+          cursor: pointer;
+        }
+      }
+      // .ant-list-item {
+      //   span {
+      //     flex: 1 1;
+      //   }
+      // }
+    }
+    &-title {
+      margin-bottom: 12px;
+      font-size: 14px;
+      line-height: 22px;
+    }
+    &-block-checkbox {
+      display: flex;
+      min-height: 42px;
+      height: 45px;
+      &-item {
+        position: relative;
+        margin-right: 16px;
+        border-radius: 2px;
+        cursor: pointer;
+      }
+      &-selectIcon {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        padding-top: 15px;
+        padding-left: 24px;
+        // color: @primary-color;
+        font-weight: 700;
+        font-size: 14px;
+      }
+    }
+  }
+}
